@@ -516,7 +516,8 @@ a {
 }
 
 .social_icon {
-    width: 6%;
+    width: 11%;
+    margin: 0 0.1rem;
 }
 
 .caution {
