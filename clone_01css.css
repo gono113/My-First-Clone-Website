@@ -561,3 +561,33 @@ a {
     aspect-ratio: 4 / 3;
     margin-left: 1rem;
 }
+
+.quik_bar {
+    width: 3.5rem;
+    height: 22rem;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 99999;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+}
+
+.quik_li {
+    text-align: center;
+    margin: 0.7rem 0;
+}
+
+.quik_1_img,
+.quik_2_img,
+.quik_3_img,
+.quik_4_img,
+.quik_5_img,
+.quik_6_img,
+.quik_7_img {
+    width: 55%;
+}
