@@ -1,0 +1,563 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-width: 75rem;
+    overflow: scroll;
+}
+
+hr {
+    color: #ebebeb;
+    opacity: 50%;
+}
+
+#mainpic_4-1,
+#mainpic_4-2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75rem;
+    margin: 0 auto; 
+    /* ✅ 핵심: 가운데 정렬
+        (부모 요소 기준으로) */
+}
+
+.main_textf {
+    margin-top: 5.5%; /* 55px 기준, 부모가 1000px일 경우 */
+}
+
+.maintexts {
+    text-align: center;
+    font-size: 800;
+}
+
+.topbar {
+    position: fixed;
+    white-space: nowrap;
+    /* 줄바꿈x css */
+    z-index: 1000;
+}
+
+.topmenu {
+    display: inline-flex;
+    list-style: none;
+}
+
+.topcate {
+    color: white;
+    font-weight: 490;
+    margin: 0.5%; /* 5px 기준 */
+    display: inline-block;
+}
+
+.textsimg_1 {
+    width: 0.688rem;
+    height: 0.688rem;
+}
+
+.textsimg_2 {
+    width: 0.688rem;
+    height: 0.688rem;
+}
+
+.topimg {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* inherit = 부모의 글자 색 따라감 */
+}
+
+.logo {
+    letter-spacing: 0.5%;     /* 5px 기준 */
+    font-size: 1.4rem;         /* 22.4px = 1.4 * 16px */
+}
+
+.new {
+    color: rgb(207, 59, 59);
+}
+
+.smfont {
+    font-size: 0.95rem; /* 15.2px */
+}
+
+.main_pic_text {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 320;
+    text-align: center;
+    color: rgb(128, 125, 115);
+    padding: 0.2%; /* 2px 기준 */
+}
+
+.attrangs {
+    margin-bottom: 1.8%; /* 18px 기준 */
+    font-weight: 380;
+    font-size: 1.19rem; /* 19px */
+}
+
+.mpbox_01 {
+    margin-top: 5.5%;
+    width: 24.5%;
+    max-width: 20rem;
+    text-align: center;
+}
+
+.mpbox_02 {
+    width: 24.5%;
+    max-width: 20rem;
+    margin-top: 5.5%;
+}
+
+.mpbox_bottom {
+    width: 24.5%;
+    max-width: 20rem;
+    margin-top: 3%;
+}
+
+.mp {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    /* 예: 4:3 비율로 자동 계산 */
+}
+/* 자식한테 위드를 예로 20% 주면 부모 사이즈에 20%만 차지함
+    = 자식은 width 100%를 주고 부모를 통해 사이즈 조절 */
+
+.mp_2 {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+}
+
+.mpt {
+    color: #656565;
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 0.688rem 0rem 0.063rem 0.5rem;
+}
+
+.maintexts_1 {
+    margin-top: 6.75rem;
+    color: #7a7541;
+    font-size: 0.938rem;
+    font-weight: 400;
+}
+
+.maintexts_2 {
+    font-size: 1.438rem;
+    font-weight: 400;
+    margin-top: 1%;
+    letter-spacing: 0.125rem;
+    /* font-weight 세밀 조절 x? */
+}
+
+.maintexts_3,
+.maintexts_5,
+.maintexts_7,
+.maintexts_9 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9c9980;
+}
+
+.maintexts_4,
+.maintexts_6 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+}
+.maintexts_8,
+.maintexts_10 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.23rem;
+}
+
+.info_1 {
+    padding: 0.4rem;
+}
+
+.span_1 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: rgb(235, 105, 126);
+}
+
+.strike {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.info_1-1 {
+    padding: 0.4rem 0;
+}
+
+.scd_line {
+    margin-top: 0.28rem;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: rgb(235, 105, 126);
+}
+
+.couponimg_1 {
+    vertical-align: middle;
+     /* 이미지를 현재 텍스트 라인 기준 세로정렬
+         또는 text-bottom, baseline 등 실험 가능 */
+         width: 1.3rem;
+         height:0.7rem;
+         transform:  translateX(-0.2rem);
+    display: inline-block;
+}
+
+.percent_1 {
+    display: inline-block;
+    transform:  translateX(-0.2rem);
+}
+
+.price_box {
+   display: flex;
+   justify-content: space-between;
+}
+
+.price_1 {
+    font-size: larger;
+    font-weight: 600;
+    color: black;
+}
+
+.button_1 {
+    font-size: 0.8rem;
+    background-color: rgb(249, 225, 229);
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.coupon_see {
+    color: rgb(238, 123, 142);
+}
+
+.info_main {
+    padding: 0.3rem;
+    font-size: 0.93rem;
+}
+
+.mall_name {
+    padding: 0.3rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+}
+
+.best_cate_1 {
+    display: inline-block;
+    padding: 0.6rem 0rem 0rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(224, 168, 187);
+}
+
+.best_cate_2 {
+    display: inline-block;
+    padding: 0.6rem 0rem 0rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(147, 143, 122);
+}
+
+.review_1 {
+    display: block;
+    padding: 0.6rem 0rem 0rem 0.6rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(147, 143, 122);
+}
+
+.review_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review_1 {
+    display: inline-block;
+}
+
+.review_img {
+    display: flex;
+}
+
+.heart,
+.bag {
+    width: 1.76rem;
+}
+
+.button_2 {
+    text-align: center;
+    margin-top: 6.8rem;
+    margin-bottom: 6.8rem;
+}
+
+.more_button_1 {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 400;
+    border: solid #7a7541 0.065rem;
+    padding: 0.8rem 3rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #7a7541;
+    letter-spacing: 0.05rem;
+    opacity: 80%;
+}
+
+.main_bottom_cate {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 2.3rem;
+}
+
+.bottom_cate {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.3rem;
+    margin-bottom: 3rem;
+    
+}
+
+.footer_left {
+    width: 22%;
+}
+
+.footer_right {
+    width: 23%;
+}
+
+.footer_middle {
+    width: 28%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.delivery_title,
+.notice_title,
+.abt_att_title,
+.only_title,
+.social_title {
+    font-weight: bold;
+}
+
+.social_title {
+    margin-bottom: 0.5rem;
+}
+
+.customer_title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.delivery_1 {
+    font-size: 0.8rem;
+    color: rgb(149, 149, 149);
+    margin-top: 1rem;
+    letter-spacing: 0.015rem;
+}
+
+.delivery_2 {
+    font-size: 0.8rem;
+    color: rgb(149, 149, 149);
+    margin-top: 0.6rem;
+    letter-spacing: 0.015rem;
+}
+
+.customer_1 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(96, 96, 96);
+    margin-top: 0.8rem;
+}
+
+.middle_box {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.kkt_iconbox,
+.naver_iconbox {
+    border: solid rgba(200, 200, 200, 0.4) 0.07rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    padding: 0.1rem;
+    border-radius: 0.4rem;
+}
+
+.kkt_iconbox a,
+.naver_iconbox a {
+    display: block;
+}
+
+.kkt,
+.naver {
+    font-size: 0.82rem;
+    font-weight: bold;
+}
+
+.kkticon,
+.navericon {
+    width: 15%;
+    vertical-align: middle;
+}
+
+.oktime {
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    color: #343434;
+    margin-top: 1.2rem;
+}
+
+.oktime_1,
+.oktime_2 {
+    font-size: 0.75rem;
+    color: rgb(149, 149, 149);
+    margin-top: 0.7rem;
+}
+
+.notice_ul,
+.only_ul {
+    margin-top: 1rem;
+}
+
+.notice_li_1 {
+    font-size: 0.77rem;
+    color: rgb(149, 149, 149);
+    letter-spacing: 0.015rem;
+}
+
+.notice_li_2,
+.notice_li_3 {
+    font-size: 0.77rem;
+    color: rgb(149, 149, 149);
+    letter-spacing: 0.015rem;
+    margin-top: 0.8rem;
+}
+
+.abt_att {
+    margin-top: 1.2rem;
+}
+
+.att_list {
+    margin-top: 1rem;
+}
+
+.att_li {
+    font-size: 0.8rem;
+    color: rgb(149, 149, 149);
+    margin-top: 0.7rem;
+}
+
+.only_li {
+    font-size: 0.8rem;
+    color: rgb(149, 149, 149);
+    margin-top: 0.7rem;
+}
+
+.footer_m_email {
+    text-decoration: underline;
+    text-underline-position: under;
+    /* text-under-position 주면 정확히 들어감 */
+    text-decoration-thickness: 0.05rem;
+}
+
+.footer_most {
+    margin-top: 2rem;
+}
+.footer_most_in {
+    font-size: 0.8rem;
+    color: rgb(149, 149, 149);
+    opacity: 80%;
+}
+
+.footer_right_img_1 {
+    width: 48%;
+    border-radius: 1.2rem;
+    margin-top: 1rem;
+}
+
+.social {
+    margin-top: 1rem;
+}
+
+.social_icon {
+    width: 6%;
+}
+
+.caution {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: rgb(149, 149, 149);
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.bottom_left {
+    padding: 2rem 1rem;
+}
+
+.bottom_left_txt {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1.2rem;
+}
+
+.bottom_right {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.bottom_infocs {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: rgb(149, 149, 149);
+    opacity: 60%;
+}
+
+.bottom_link_img {
+    width: 27%;
+    max-width: 4rem;
+    aspect-ratio: 4 / 3;
+    margin-left: 1rem;
+}
